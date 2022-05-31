@@ -10,8 +10,6 @@ $(document).ready(function () {
   $("#bar__search-quick").click(function () {
     $(this).addClass("backgroundMain");
     $("#bar__search-advanced").removeClass("backgroundMain");
-
-    // $("#bar__search-advanced").addClass("backgroundDefault");
     $(".bar__search-quick-advanced").removeClass("open");
   });
 });

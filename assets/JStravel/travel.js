@@ -1,11 +1,11 @@
 const Selector = document.querySelector.bind(document);
 const SelectorAll = document.querySelectorAll.bind(document);
 
-const contacts = $(".container__tab--contact");
-const contact = $(".contact");
-const advanced = $("#bar__search-advanced");
-const quick = $("#bar__search-quick");
-const quickAdvance = $(".bar__search-quick-advanced");
+// const contacts = $(".container__tab--contact");
+// const contact = $(".contact");
+// const advanced = $("#bar__search-advanced");
+// const quick = $("#bar__search-quick");
+// const quickAdvance = $(".bar__search-quick-advanced");
 const placeItem = Selector(".city-container");
 const tourismIMG = Selector(".container__tourism");
 
