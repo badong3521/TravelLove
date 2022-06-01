@@ -85,7 +85,7 @@ const app = {
     },
   ],
   render: function () {
-    const htmls = this.places.map((place, index) => {
+    const HTML = this.places.map((place, index) => {
       return `
                         <div data-index="${index}" class="city-container-item col l-4">
                                 <div class="city-container-item-total">
@@ -110,17 +110,14 @@ const app = {
                                         </div>
                                 </div>
                         </div>
-
-
-                    
                         `;
     });
 
-    placeItem.innerHTML = htmls.join("\n");
+    placeItem.innerHTML = HTML.join("\n");
 
-    const htmlsDestinations = this.destinations.map((destination, index) => {
+    const htmlDestinations = this.destinations.map((destination, index) => {
       return `
-                        <div class="container__tourism-list  col l-3">
+                        <div key=${index} class="container__tourism-list  col l-3">
                         <figure class="container__tourism-list-img snip0019">
                         <img src="${destination.img}" alt="photo">
                                 <figcaption>
@@ -133,7 +130,7 @@ const app = {
                     </div>
                         `;
     });
-    tourismIMG.innerHTML = htmlsDestinations.join("\n");
+    tourismIMG.innerHTML = htmlDestinations.join("\n");
   },
   renderBg: function () {
     const bgCategory = SelectorAll(".city-container__category");

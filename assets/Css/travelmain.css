@@ -446,16 +446,6 @@ select {
   z-index: 1000;
 }
 
-@keyframes toSlide {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .bar__search-quick-advanced1,
 .bar__search-quick-advanced2 {
   display: flex;
